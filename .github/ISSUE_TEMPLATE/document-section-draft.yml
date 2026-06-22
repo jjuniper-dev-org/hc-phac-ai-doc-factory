@@ -1,0 +1,44 @@
+﻿name: Document Section Draft
+description: Draft or revise one section of a major document
+title: "[Draft]: "
+labels: ["drafting", "document"]
+body:
+  - type: input
+    id: document
+    attributes:
+      label: Document
+      placeholder: "AI Playbook / Data Architecture Plan"
+    validations:
+      required: true
+
+  - type: input
+    id: section
+    attributes:
+      label: Section
+      placeholder: "Example: 04 - AI Use Case Intake"
+    validations:
+      required: true
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What should the agent produce?
+    validations:
+      required: true
+
+  - type: textarea
+    id: source_material
+    attributes:
+      label: Source material
+      description: List source files, references, or prior decisions to use.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What must be true for this work to be accepted?
+    validations:
+      required: true

@@ -1,0 +1,36 @@
+﻿name: Review Request
+description: Request a specialized review of a document section
+title: "[Review]: "
+labels: ["review"]
+body:
+  - type: input
+    id: review_type
+    attributes:
+      label: Review type
+      placeholder: "Writing / EA / Microsoft / TOGAF / Policy / Data Architecture"
+    validations:
+      required: true
+
+  - type: input
+    id: document_section
+    attributes:
+      label: Document section
+      placeholder: "Example: AI Playbook section 08"
+    validations:
+      required: true
+
+  - type: textarea
+    id: review_questions
+    attributes:
+      label: Review questions
+      description: What should the reviewer focus on?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_output
+    attributes:
+      label: Expected output
+      description: What should the review produce?
+    validations:
+      required: true
