@@ -1,0 +1,1 @@
+﻿Intel brief working area for source-controlled document-production context. Markdown is canonical; Neo4j and Qdrant are derived retrieval/query layers. Content completion is owned by the Librarian workflow.
