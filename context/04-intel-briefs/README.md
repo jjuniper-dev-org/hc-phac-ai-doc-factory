@@ -36,6 +36,20 @@ Intel briefs provide stable, reviewable working context for AI Playbook drafting
 | Populate and maintain brief content | Librarian |
 | Promote accepted context | Human reviewer |
 
+## Validation
+
+Run the structural validator from the repository root:
+
+```bash
+python tools/intel/validate_intel_docs.py
+```
+
+The validator checks that intel briefs are non-empty, have required frontmatter, include expected sections, appear in `data/intel_manifest.csv`, and include graph extraction when marked as graph-enabled.
+
+Validation is mechanical only. It does not confirm that content is approved, complete, authoritative, or ready for promotion.
+
+Hard structural failures return a non-zero exit code. Warnings should be resolved before moving a brief from `draft` to `review-ready`.
+
 ## Guardrails
 
 - Do not add sensitive or controlled operational information unless the target runtime is approved.
