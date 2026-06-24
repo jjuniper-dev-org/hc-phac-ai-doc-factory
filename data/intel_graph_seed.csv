@@ -1,0 +1,113 @@
+source_id,node_type,name,relationship,target
+INTEL-001,IntelBrief,PATH / HAIL Convergence,,
+INTEL-001,Source,SRC-PATH-BRIEFING,DERIVED_FROM,PATH / HAIL Convergence
+INTEL-001,Source,SRC-HAIL-BRIEFING,DERIVED_FROM,PATH / HAIL Convergence
+INTEL-001,Tag,path,TAGS,PATH / HAIL Convergence
+INTEL-001,Tag,hail,TAGS,PATH / HAIL Convergence
+INTEL-001,Tag,foundry,TAGS,PATH / HAIL Convergence
+INTEL-001,Tag,databricks,TAGS,PATH / HAIL Convergence
+INTEL-001,Tag,pattern-zero,TAGS,PATH / HAIL Convergence
+INTEL-001,Tag,ai-platform,TAGS,PATH / HAIL Convergence
+INTEL-001,Tag,mlops,TAGS,PATH / HAIL Convergence
+INTEL-001,Concept,PATH,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Concept,HAIL,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Concept,Pattern Zero,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Concept,Foundry,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Concept,Databricks,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Concept,MLOps,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Concept,protected AI hosting,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Concept,platform-level responsibility,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Concept,program-level accountability,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Claim,PATH has evolved into an enterprise platform pattern for protected AI application hosting and governance.,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Claim,HAIL remains the operational runtime proof point.,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Claim,PATH and HAIL should not be described as merging.,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Claim,Pattern Zero should become the standard entry point for AI model/API access.,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Decision,Confirm PATH platform role.,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Decision,Confirm HAIL runtime role.,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Decision,Confirm Pattern Zero as intake pattern.,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Risk,Approval overstatement.,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Risk,Duplicated platform work.,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Risk,Weak ownership split.,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Risk,Unclear production path for AI workloads.,MENTIONED_IN,PATH / HAIL Convergence
+INTEL-001,Relationship,PATH,GOVERNS,AI application hosting
+INTEL-001,Relationship,HAIL,RUNS,AI workloads
+INTEL-001,Relationship,PATH,USES,Foundry
+INTEL-001,Relationship,PATH,USES,Databricks
+INTEL-001,Relationship,Pattern,Zero STANDARDIZES AI model/API access
+INTEL-001,Relationship,Program,owner RETAINS_ACCOUNTABILITY_FOR operational risk
+INTEL-001,Relationship,PATH,INFORMS,AI Playbook
+INTEL-002,IntelBrief,AI Readiness / Data Foundation,,
+INTEL-002,Source,SRC-003,DERIVED_FROM,AI Readiness / Data Foundation
+INTEL-002,Tag,ai-readiness,TAGS,AI Readiness / Data Foundation
+INTEL-002,Tag,data-architecture,TAGS,AI Readiness / Data Foundation
+INTEL-002,Tag,fair,TAGS,AI Readiness / Data Foundation
+INTEL-002,Tag,sacr,TAGS,AI Readiness / Data Foundation
+INTEL-002,Concept,AI readiness,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,enterprise data architecture,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,data governance,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,FAIR,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,SACR,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,data inventory,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,data steward,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,Data Management Plan,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Claim,AI readiness depends on foundational data readiness.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Claim,"AI use cases should be triaged for data availability, quality, governance, and stewardship.",MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Relationship,AI,readiness REQUIRES data governance
+INTEL-002,Relationship,AI,readiness REQUIRES enterprise data architecture
+INTEL-002,Relationship,Data,Architecture Plan INFORMS AI Playbook
+INTEL-003,IntelBrief,Purview Data Control Plane,,
+INTEL-003,Source,SRC-PURVIEW-CONTROL-PLANE,DERIVED_FROM,Purview Data Control Plane
+INTEL-003,Tag,purview,TAGS,Purview Data Control Plane
+INTEL-003,Tag,data-governance,TAGS,Purview Data Control Plane
+INTEL-003,Tag,lineage,TAGS,Purview Data Control Plane
+INTEL-003,Tag,classification,TAGS,Purview Data Control Plane
+INTEL-003,Concept,Purview,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Concept,data control plane,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Concept,data classification,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Concept,lineage,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Concept,auditability,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Concept,Fabric,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Concept,Databricks,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Concept,PATH,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Concept,HAIL,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Relationship,Purview,GOVERNS,data classification
+INTEL-003,Relationship,Purview,GOVERNS,data lineage
+INTEL-003,Relationship,PATH,CONSUMES,Purview controls
+INTEL-003,Relationship,HAIL,CONSUMES,Purview controls
+INTEL-011,IntelBrief,DADM / AIA Governance,,
+INTEL-011,Source,SRC-DADM-AIA-PRIMARY,DERIVED_FROM,DADM / AIA Governance
+INTEL-011,Tag,dadm,TAGS,DADM / AIA Governance
+INTEL-011,Tag,aia,TAGS,DADM / AIA Governance
+INTEL-011,Tag,automated-decision-making,TAGS,DADM / AIA Governance
+INTEL-011,Tag,responsible-ai,TAGS,DADM / AIA Governance
+INTEL-011,Tag,governance,TAGS,DADM / AIA Governance
+INTEL-011,Tag,accountability,TAGS,DADM / AIA Governance
+INTEL-011,Concept,DADM,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Concept,AIA,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Concept,automated decision system,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Concept,administrative decision,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Concept,impact level,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Concept,human involvement,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Concept,recourse,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Concept,monitoring,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Concept,publication,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Concept,privacy consultation,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Concept,legal consultation,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Claim,DADM/AIA is primary governance context for automated decision systems.,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Claim,Not all AI use cases trigger DADM.,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Claim,"All AI use cases should still be triaged for governance, privacy, security, and accountability.",MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Claim,Pattern Zero should include a DADM/AIA trigger assessment.,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Decision,Define AI intake triage for DADM/AIA.,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Decision,Define AIA responsibility model.,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Decision,Define publication/update process.,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Risk,Over-application.,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Risk,Under-application.,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Risk,Weak accountability.,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Risk,Inadequate human oversight.,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Risk,Poor evidence of monitoring and recourse.,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Relationship,DADM,GOVERNS,automated decision systems
+INTEL-011,Relationship,AIA,ASSESSES,automated decision systems
+INTEL-011,Relationship,Pattern,Zero REQUIRES DADM/AIA triage
+INTEL-011,Relationship,Program,owner RETAINS_ACCOUNTABILITY_FOR administrative decision use
+INTEL-011,Relationship,PATH,HOSTS,AI-enabled applications
+INTEL-011,Relationship,Purview,SUPPORTS,data governance evidence
