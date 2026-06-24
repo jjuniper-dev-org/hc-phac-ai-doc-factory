@@ -3,12 +3,14 @@
 from __future__ import annotations
 
 import csv
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 INTEL_DIR = ROOT / "context" / "04-intel-briefs"
 OUT = ROOT / "data" / "intel_graph_seed.csv"
 FIELDS = ["source_id", "node_type", "name", "relationship", "target"]
+RELATIONSHIP_TOKEN = re.compile(r"^[A-Z][A-Z0-9_/-]*$")
 
 
 def parse_frontmatter(text: str) -> tuple[dict[str, object], str]:
@@ -99,6 +101,21 @@ def relationship_lines(text: str) -> list[str]:
     return lines
 
 
+def parse_relationship(line: str) -> tuple[str, str, str] | None:
+    """Parse explicit lines such as 'Pattern Zero STANDARDIZES AI model/API access'."""
+    parts = line.split()
+    for index, token in enumerate(parts):
+        if index == 0:
+            continue
+        if RELATIONSHIP_TOKEN.match(token):
+            source = " ".join(parts[:index]).strip()
+            relationship = token.strip()
+            target = " ".join(parts[index + 1 :]).strip()
+            if source and relationship and target:
+                return source, relationship, target
+    return None
+
+
 def add_row(rows: list[dict[str, str]], source_id: str, node_type: str, name: str, relationship: str = "", target: str = "") -> None:
     if not name:
         return
@@ -130,9 +147,10 @@ def rows_for_file(path: Path) -> list[dict[str, str]]:
             add_row(rows, source_id, node_type, item, "MENTIONED_IN", title)
 
     for line in relationship_lines(section_after_heading(graph, "Relationships", "###")):
-        parts = line.split()
-        if len(parts) >= 3:
-            add_row(rows, source_id, "Relationship", parts[0], parts[1], " ".join(parts[2:]))
+        parsed = parse_relationship(line)
+        if parsed:
+            source, relationship, target = parsed
+            add_row(rows, source_id, "Relationship", source, relationship, target)
     return rows
 
 
