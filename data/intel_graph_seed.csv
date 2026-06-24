@@ -37,43 +37,224 @@ INTEL-001,Relationship,Pattern Zero,STANDARDIZES,AI model/API access
 INTEL-001,Relationship,Program owner,RETAINS_ACCOUNTABILITY_FOR,operational risk
 INTEL-001,Relationship,PATH,INFORMS,AI Playbook
 INTEL-002,IntelBrief,AI Readiness / Data Foundation,,
-INTEL-002,Source,SRC-003,DERIVED_FROM,AI Readiness / Data Foundation
+INTEL-002,Source,SRC-AI-READINESS-DATA-PERSPECTIVE,DERIVED_FROM,AI Readiness / Data Foundation
+INTEL-002,Source,SRC-HC-PHAC-IT-PLAN-FOCUS-AREAS,DERIVED_FROM,AI Readiness / Data Foundation
+INTEL-002,Source,SRC-PHAC-DATA-STRATEGY-2025-2028,DERIVED_FROM,AI Readiness / Data Foundation
 INTEL-002,Tag,ai-readiness,TAGS,AI Readiness / Data Foundation
 INTEL-002,Tag,data-architecture,TAGS,AI Readiness / Data Foundation
 INTEL-002,Tag,fair,TAGS,AI Readiness / Data Foundation
 INTEL-002,Tag,sacr,TAGS,AI Readiness / Data Foundation
+INTEL-002,Tag,data-governance,TAGS,AI Readiness / Data Foundation
+INTEL-002,Tag,data-quality,TAGS,AI Readiness / Data Foundation
+INTEL-002,Tag,metadata,TAGS,AI Readiness / Data Foundation
+INTEL-002,Tag,stewardship,TAGS,AI Readiness / Data Foundation
+INTEL-002,Tag,phac-data-strategy,TAGS,AI Readiness / Data Foundation
+INTEL-002,Tag,interoperability,TAGS,AI Readiness / Data Foundation
+INTEL-002,Tag,surveillance,TAGS,AI Readiness / Data Foundation
+INTEL-002,Tag,data-literacy,TAGS,AI Readiness / Data Foundation
 INTEL-002,Concept,AI readiness,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,data readiness,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,PHAC Data Strategy,MENTIONED_IN,AI Readiness / Data Foundation
 INTEL-002,Concept,enterprise data architecture,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,public-health-focused data architecture,MENTIONED_IN,AI Readiness / Data Foundation
 INTEL-002,Concept,data governance,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,interoperability,MENTIONED_IN,AI Readiness / Data Foundation
 INTEL-002,Concept,FAIR,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,CARE,MENTIONED_IN,AI Readiness / Data Foundation
 INTEL-002,Concept,SACR,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,acceptable repository,MENTIONED_IN,AI Readiness / Data Foundation
 INTEL-002,Concept,data inventory,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,data dictionary,MENTIONED_IN,AI Readiness / Data Foundation
 INTEL-002,Concept,data steward,MENTIONED_IN,AI Readiness / Data Foundation
 INTEL-002,Concept,Data Management Plan,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,metadata catalogue,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,data quality,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,Protected B posture,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,reusable data product,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,health equity,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,Indigenous data sovereignty,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,SGBA+,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,disaggregated data,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,surveillance systems,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Concept,HC-DTB,MENTIONED_IN,AI Readiness / Data Foundation
 INTEL-002,Claim,AI readiness depends on foundational data readiness.,MENTIONED_IN,AI Readiness / Data Foundation
-INTEL-002,Claim,"AI use cases should be triaged for data availability, quality, governance, and stewardship.",MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Claim,"AI use cases should be triaged for data availability, quality, governance, interoperability, stewardship, and equity considerations.",MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Claim,Model access alone does not create enterprise AI readiness.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Claim,PATH and HAIL must inherit data governance controls from enterprise data architecture.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Claim,Data inventories and stewardship are prerequisites for scalable AI reuse.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Claim,PHAC’s Data Strategy explicitly links data governance to AI integration.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Claim,PHAC operates more than 50 active surveillance systems with more than 180 data sources.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Claim,"PHAC data modernization depends on interoperability, stewardship, standards, literacy, equity, and responsible use.",MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Decision,Define AI data-readiness triage.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Decision,Confirm acceptable repository expectations for AI-relevant data.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Decision,Align AI use-case inventory with data asset inventory.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Decision,Define where data-readiness evidence is captured.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Decision,Map PHAC Data Strategy priorities to AI readiness gates.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Decision,Locate and assess an HC-specific data strategy source.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Risk,Tool-first AI delivery.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Risk,Siloed data products.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Risk,Weak metadata.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Risk,Ambiguous stewardship.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Risk,Equity and bias gaps.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Risk,PHAC/HC strategy confusion.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Risk,Overclaimed readiness.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Relationship,AI readiness,REQUIRES,data readiness
 INTEL-002,Relationship,AI readiness,REQUIRES,data governance
 INTEL-002,Relationship,AI readiness,REQUIRES,enterprise data architecture
+INTEL-002,Relationship,AI readiness,REQUIRES,interoperability
+INTEL-002,Relationship,AI readiness,REQUIRES,equity-informed data practices
+INTEL-002,Relationship,PHAC Data Strategy,INFORMS,AI readiness
+INTEL-002,Relationship,PHAC Data Strategy,REQUIRES,data governance
+INTEL-002,Relationship,PHAC Data Strategy,REQUIRES,interoperability
+INTEL-002,Relationship,PHAC Data Strategy,SUPPORTS,data stewardship
+INTEL-002,Relationship,PHAC Data Strategy,SUPPORTS,data literacy
+INTEL-002,Relationship,PHAC Data Strategy,ALIGNS_WITH,HC-DTB data architecture collaboration
 INTEL-002,Relationship,Data Architecture Plan,INFORMS,AI Playbook
+INTEL-002,Relationship,Data steward,OWNS,data quality evidence
+INTEL-002,Relationship,Purview,SUPPORTS,metadata catalogue
+INTEL-002,Relationship,PATH,INHERITS,data governance controls
+INTEL-002,Relationship,HAIL,INHERITS,data governance controls
 INTEL-003,IntelBrief,Purview Data Control Plane,,
 INTEL-003,Source,SRC-PURVIEW-CONTROL-PLANE,DERIVED_FROM,Purview Data Control Plane
 INTEL-003,Tag,purview,TAGS,Purview Data Control Plane
 INTEL-003,Tag,data-governance,TAGS,Purview Data Control Plane
 INTEL-003,Tag,lineage,TAGS,Purview Data Control Plane
 INTEL-003,Tag,classification,TAGS,Purview Data Control Plane
+INTEL-003,Tag,auditability,TAGS,Purview Data Control Plane
+INTEL-003,Tag,control-plane,TAGS,Purview Data Control Plane
 INTEL-003,Concept,Purview,MENTIONED_IN,Purview Data Control Plane
 INTEL-003,Concept,data control plane,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Concept,data governance control plane,MENTIONED_IN,Purview Data Control Plane
 INTEL-003,Concept,data classification,MENTIONED_IN,Purview Data Control Plane
 INTEL-003,Concept,lineage,MENTIONED_IN,Purview Data Control Plane
 INTEL-003,Concept,auditability,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Concept,control inheritance,MENTIONED_IN,Purview Data Control Plane
 INTEL-003,Concept,Fabric,MENTIONED_IN,Purview Data Control Plane
 INTEL-003,Concept,Databricks,MENTIONED_IN,Purview Data Control Plane
 INTEL-003,Concept,PATH,MENTIONED_IN,Purview Data Control Plane
 INTEL-003,Concept,HAIL,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Concept,Protected B posture,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Concept,enterprise data governance,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Claim,Purview should be positioned as the enterprise data governance control plane for AI-relevant data.,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Claim,PATH and HAIL should consume data governance controls rather than recreate them.,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Claim,AI projects should inherit data controls from the enterprise layer where possible.,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Claim,Partial Purview adoption should not be interpreted as full enterprise governance coverage.,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Claim,Data governance control-plane separation reduces duplication in AI review.,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Decision,Confirm Purview as enterprise data governance control plane.,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Decision,Define PATH/Purview boundary.,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Decision,Confirm Fabric and Databricks integration pattern.,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Decision,Define minimum Purview evidence for AI workloads.,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Risk,M365-centric bias.,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Risk,PATH/Purview overlap.,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Risk,False sense of governance.,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Risk,Weak integration with non-M365 platforms.,MENTIONED_IN,Purview Data Control Plane
+INTEL-003,Risk,Overstating approval.,MENTIONED_IN,Purview Data Control Plane
 INTEL-003,Relationship,Purview,GOVERNS,data classification
 INTEL-003,Relationship,Purview,GOVERNS,data lineage
+INTEL-003,Relationship,Purview,SUPPORTS,auditability
 INTEL-003,Relationship,PATH,CONSUMES,Purview controls
 INTEL-003,Relationship,HAIL,CONSUMES,Purview controls
+INTEL-003,Relationship,Fabric,REQUIRES,Purview integration
+INTEL-003,Relationship,Databricks,REQUIRES,Purview integration
+INTEL-003,Relationship,Purview,INFORMS,Data Architecture Plan
+INTEL-003,Relationship,Purview,INFORMS,AI Playbook
+INTEL-004,IntelBrief,GoC AI Platform Landscape,,
+INTEL-004,Source,SRC-GOC-AI-PLATFORM-INTELLIGENCE,DERIVED_FROM,GoC AI Platform Landscape
+INTEL-004,Tag,goc-ai-platforms,TAGS,GoC AI Platform Landscape
+INTEL-004,Tag,canchat,TAGS,GoC AI Platform Landscape
+INTEL-004,Tag,copilot,TAGS,GoC AI Platform Landscape
+INTEL-004,Tag,gctranslate,TAGS,GoC AI Platform Landscape
+INTEL-004,Tag,radia,TAGS,GoC AI Platform Landscape
+INTEL-004,Tag,path,TAGS,GoC AI Platform Landscape
+INTEL-004,Tag,hail,TAGS,GoC AI Platform Landscape
+INTEL-004,Tag,maplept,TAGS,GoC AI Platform Landscape
+INTEL-004,Tag,platform-landscape,TAGS,GoC AI Platform Landscape
+INTEL-004,Concept,CANChat,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Concept,M365 Copilot,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Concept,GCTranslate,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Concept,RADIA,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Concept,PATH,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Concept,HAIL,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Concept,MaplePT,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Concept,AI control plane,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Concept,productivity interface,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Concept,vertical AI service,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Concept,runtime layer,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Concept,foundation model layer,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Concept,Protected B posture,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Claim,The current GC AI landscape is fragmented rather than a single coherent enterprise AI platform.,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Claim,PATH is the intended HC/PHAC governed AI control-plane/service model.,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Claim,HAIL is the active operational runtime proof point.,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Claim,GCTranslate is a vertical governed AI service pattern.,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Claim,Copilot embeds AI inside existing systems of record and permission layers.,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Claim,EA platform intelligence must not be represented as formal GC policy.,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Decision,Confirm PATH target control-plane role.,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Decision,Confirm HAIL runtime convergence role.,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Decision,Define CANChat usage pattern.,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Decision,Define GCTranslate integration posture.,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Decision,Maintain sovereign model horizon scan.,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Risk,Tool equivalence error.,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Risk,Overclaiming GC alignment.,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Risk,PATH/HAIL divergence.,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Risk,Duplicative procurement.,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Risk,Weak Protected B posture.,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Relationship,CANChat,SUPPORTS,productivity interface
+INTEL-004,Relationship,Copilot,EMBEDS,AI in M365 workflows
+INTEL-004,Relationship,GCTranslate,PROVIDES,vertical AI service
+INTEL-004,Relationship,PATH,GOVERNS,AI control plane
+INTEL-004,Relationship,HAIL,RUNS,AI workloads
+INTEL-004,Relationship,MaplePT,SIGNALS,sovereign model option
+INTEL-004,Relationship,PATH,REQUIRES,HAIL convergence model
+INTEL-004,Relationship,AI Playbook,USES,platform landscape
+INTEL-004,Relationship,Procurement rubric,USES,platform landscape
+INTEL-005,IntelBrief,GREP Decision Assurance Pattern,,
+INTEL-005,Source,SRC-GREP-AGENT-BRIEFING,DERIVED_FROM,GREP Decision Assurance Pattern
+INTEL-005,Source,SRC-HAIL-BRIEFING,DERIVED_FROM,GREP Decision Assurance Pattern
+INTEL-005,Tag,grep,TAGS,GREP Decision Assurance Pattern
+INTEL-005,Tag,decision-assurance,TAGS,GREP Decision Assurance Pattern
+INTEL-005,Tag,scientific-screening,TAGS,GREP Decision Assurance Pattern
+INTEL-005,Tag,human-in-the-loop,TAGS,GREP Decision Assurance Pattern
+INTEL-005,Tag,agent-disagreement,TAGS,GREP Decision Assurance Pattern
+INTEL-005,Tag,genaiops,TAGS,GREP Decision Assurance Pattern
+INTEL-005,Tag,hail,TAGS,GREP Decision Assurance Pattern
+INTEL-005,Concept,GREP,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Concept,GREP-ExP,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Concept,decision assurance,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Concept,scientific evidence screening,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Concept,human-in-the-loop,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Concept,agent disagreement,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Concept,structured extraction,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Concept,source traceability,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Concept,evaluation loop,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Concept,GenAIOps,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Concept,HAIL,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Concept,PATH,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Concept,AI-Ops,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Claim,GREP is both a workload and a reusable decision-assurance pattern.,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Claim,Human-in-the-loop review is central to the GREP assurance model.,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Claim,Agent disagreement can be used to surface uncertainty and review priority.,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Claim,Evidence-heavy workflows require source traceability and evaluation controls.,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Claim,GREP helps define assurance capabilities needed by PATH and HAIL.,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Decision,Define GREP as a reusable decision-assurance pattern.,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Decision,Define minimum HITL requirements.,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Decision,Define evaluation and monitoring requirements.,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Decision,Define source traceability requirements.,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Decision,Decide where GREP-like workloads run.,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Risk,Treating screening as decision automation.,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Risk,Weak evidence traceability.,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Risk,No evaluation loop.,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Risk,Pattern trapped in one workload.,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Risk,Overstating production readiness.,MENTIONED_IN,GREP Decision Assurance Pattern
+INTEL-005,Relationship,GREP,IMPLEMENTS,decision assurance
+INTEL-005,Relationship,GREP,USES,human-in-the-loop review
+INTEL-005,Relationship,GREP,USES,agent disagreement
+INTEL-005,Relationship,GREP,REQUIRES,source traceability
+INTEL-005,Relationship,GREP,REQUIRES,evaluation loop
+INTEL-005,Relationship,HAIL,RUNS,GREP-like workloads
+INTEL-005,Relationship,PATH,GOVERNS,decision-assurance pattern
+INTEL-005,Relationship,GenAIOps,MONITORS,AI quality
+INTEL-005,Relationship,AI Playbook,USES,GREP pattern
+INTEL-005,Relationship,Procurement rubric,USES,GREP assurance criteria
 INTEL-011,IntelBrief,DADM / AIA Governance,,
 INTEL-011,Source,SRC-DADM-AIA-PRIMARY,DERIVED_FROM,DADM / AIA Governance
 INTEL-011,Tag,dadm,TAGS,DADM / AIA Governance
