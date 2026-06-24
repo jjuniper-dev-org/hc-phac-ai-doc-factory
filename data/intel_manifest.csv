@@ -1,0 +1,5 @@
+id,path,title,status,confidence,graph_enabled,pipeline_use
+INTEL-001,context/04-intel-briefs/INTEL-001-path-hail-convergence.md,PATH / HAIL Convergence,draft,medium,true,true
+INTEL-002,context/04-intel-briefs/INTEL-002-ai-readiness-data-foundation.md,AI Readiness / Data Foundation,draft,medium,true,true
+INTEL-003,context/04-intel-briefs/INTEL-003-purview-data-control-plane.md,Purview Data Control Plane,draft,medium,true,true
+INTEL-011,context/04-intel-briefs/INTEL-011-dadm-aia-governance.md,DADM / AIA Governance,draft,medium,true,true
