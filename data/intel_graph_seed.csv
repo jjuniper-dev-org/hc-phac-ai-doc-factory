@@ -33,8 +33,8 @@ INTEL-001,Relationship,PATH,GOVERNS,AI application hosting
 INTEL-001,Relationship,HAIL,RUNS,AI workloads
 INTEL-001,Relationship,PATH,USES,Foundry
 INTEL-001,Relationship,PATH,USES,Databricks
-INTEL-001,Relationship,Pattern,Zero STANDARDIZES AI model/API access
-INTEL-001,Relationship,Program,owner RETAINS_ACCOUNTABILITY_FOR operational risk
+INTEL-001,Relationship,Pattern Zero,STANDARDIZES,AI model/API access
+INTEL-001,Relationship,Program owner,RETAINS_ACCOUNTABILITY_FOR,operational risk
 INTEL-001,Relationship,PATH,INFORMS,AI Playbook
 INTEL-002,IntelBrief,AI Readiness / Data Foundation,,
 INTEL-002,Source,SRC-003,DERIVED_FROM,AI Readiness / Data Foundation
@@ -52,9 +52,9 @@ INTEL-002,Concept,data steward,MENTIONED_IN,AI Readiness / Data Foundation
 INTEL-002,Concept,Data Management Plan,MENTIONED_IN,AI Readiness / Data Foundation
 INTEL-002,Claim,AI readiness depends on foundational data readiness.,MENTIONED_IN,AI Readiness / Data Foundation
 INTEL-002,Claim,"AI use cases should be triaged for data availability, quality, governance, and stewardship.",MENTIONED_IN,AI Readiness / Data Foundation
-INTEL-002,Relationship,AI,readiness REQUIRES data governance
-INTEL-002,Relationship,AI,readiness REQUIRES enterprise data architecture
-INTEL-002,Relationship,Data,Architecture Plan INFORMS AI Playbook
+INTEL-002,Relationship,AI readiness,REQUIRES,data governance
+INTEL-002,Relationship,AI readiness,REQUIRES,enterprise data architecture
+INTEL-002,Relationship,Data Architecture Plan,INFORMS,AI Playbook
 INTEL-003,IntelBrief,Purview Data Control Plane,,
 INTEL-003,Source,SRC-PURVIEW-CONTROL-PLANE,DERIVED_FROM,Purview Data Control Plane
 INTEL-003,Tag,purview,TAGS,Purview Data Control Plane
@@ -107,7 +107,7 @@ INTEL-011,Risk,Inadequate human oversight.,MENTIONED_IN,DADM / AIA Governance
 INTEL-011,Risk,Poor evidence of monitoring and recourse.,MENTIONED_IN,DADM / AIA Governance
 INTEL-011,Relationship,DADM,GOVERNS,automated decision systems
 INTEL-011,Relationship,AIA,ASSESSES,automated decision systems
-INTEL-011,Relationship,Pattern,Zero REQUIRES DADM/AIA triage
-INTEL-011,Relationship,Program,owner RETAINS_ACCOUNTABILITY_FOR administrative decision use
+INTEL-011,Relationship,Pattern Zero,REQUIRES,DADM/AIA triage
+INTEL-011,Relationship,Program owner,RETAINS_ACCOUNTABILITY_FOR,administrative decision use
 INTEL-011,Relationship,PATH,HOSTS,AI-enabled applications
 INTEL-011,Relationship,Purview,SUPPORTS,data governance evidence
