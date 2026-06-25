@@ -40,6 +40,7 @@ INTEL-002,IntelBrief,AI Readiness / Data Foundation,,
 INTEL-002,Source,SRC-AI-READINESS-DATA-PERSPECTIVE,DERIVED_FROM,AI Readiness / Data Foundation
 INTEL-002,Source,SRC-HC-PHAC-IT-PLAN-FOCUS-AREAS,DERIVED_FROM,AI Readiness / Data Foundation
 INTEL-002,Source,SRC-PHAC-DATA-STRATEGY-2025-2028,DERIVED_FROM,AI Readiness / Data Foundation
+INTEL-002,Source,SRC-HC-DATA-STRATEGY-2019,DERIVED_FROM,AI Readiness / Data Foundation
 INTEL-002,Tag,ai-readiness,TAGS,AI Readiness / Data Foundation
 INTEL-002,Tag,data-architecture,TAGS,AI Readiness / Data Foundation
 INTEL-002,Tag,fair,TAGS,AI Readiness / Data Foundation
@@ -90,7 +91,7 @@ INTEL-002,Decision,Confirm acceptable repository expectations for AI-relevant da
 INTEL-002,Decision,Align AI use-case inventory with data asset inventory.,MENTIONED_IN,AI Readiness / Data Foundation
 INTEL-002,Decision,Define where data-readiness evidence is captured.,MENTIONED_IN,AI Readiness / Data Foundation
 INTEL-002,Decision,Map PHAC Data Strategy priorities to AI readiness gates.,MENTIONED_IN,AI Readiness / Data Foundation
-INTEL-002,Decision,Locate and assess an HC-specific data strategy source.,MENTIONED_IN,AI Readiness / Data Foundation
+INTEL-002,Decision,Locate and assess an HC-specific data strategy source (resolved: `SRC-HC-DATA-STRATEGY-2019`; see `INTEL-006`).,MENTIONED_IN,AI Readiness / Data Foundation
 INTEL-002,Risk,Tool-first AI delivery.,MENTIONED_IN,AI Readiness / Data Foundation
 INTEL-002,Risk,Siloed data products.,MENTIONED_IN,AI Readiness / Data Foundation
 INTEL-002,Risk,Weak metadata.,MENTIONED_IN,AI Readiness / Data Foundation
@@ -114,6 +115,7 @@ INTEL-002,Relationship,Data steward,OWNS,data quality evidence
 INTEL-002,Relationship,Purview,SUPPORTS,metadata catalogue
 INTEL-002,Relationship,PATH,INHERITS,data governance controls
 INTEL-002,Relationship,HAIL,INHERITS,data governance controls
+INTEL-002,Relationship,INTEL-002,RELATES_TO,INTEL-006 ON HC-vs-PHAC data strategy distinction
 INTEL-003,IntelBrief,Purview Data Control Plane,,
 INTEL-003,Source,SRC-PURVIEW-CONTROL-PLANE,DERIVED_FROM,Purview Data Control Plane
 INTEL-003,Tag,purview,TAGS,Purview Data Control Plane
@@ -267,6 +269,45 @@ INTEL-005,Relationship,PATH,GOVERNS,decision-assurance pattern
 INTEL-005,Relationship,GenAIOps,MONITORS,AI quality
 INTEL-005,Relationship,AI Playbook,USES,GREP pattern
 INTEL-005,Relationship,Procurement rubric,USES,GREP assurance criteria
+INTEL-006,IntelBrief,HC/PHAC Data Strategy Alignment,,
+INTEL-006,Source,SRC-HC-DATA-STRATEGY-2019,DERIVED_FROM,HC/PHAC Data Strategy Alignment
+INTEL-006,Source,SRC-PHAC-DATA-STRATEGY-2025-2028,DERIVED_FROM,HC/PHAC Data Strategy Alignment
+INTEL-006,Tag,hc-data-strategy,TAGS,HC/PHAC Data Strategy Alignment
+INTEL-006,Tag,phac-data-strategy,TAGS,HC/PHAC Data Strategy Alignment
+INTEL-006,Tag,data-governance,TAGS,HC/PHAC Data Strategy Alignment
+INTEL-006,Tag,enterprise-architecture,TAGS,HC/PHAC Data Strategy Alignment
+INTEL-006,Tag,currency-gap,TAGS,HC/PHAC Data Strategy Alignment
+INTEL-006,Tag,interoperability,TAGS,HC/PHAC Data Strategy Alignment
+INTEL-006,Tag,ai-readiness,TAGS,HC/PHAC Data Strategy Alignment
+INTEL-006,Concept,Health Canada Data Strategy,MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Concept,PHAC Data Strategy,MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Concept,enterprise data governance,MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Concept,public-health-focused data architecture,MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Concept,Chief Data Officer,MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Concept,SAS Grid,MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Concept,DG-Science forum,MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Concept,Health Portfolio,MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Concept,HC-DTB,MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Claim,"HC's 2019 Data Strategy is enterprise-wide, spanning both of HC's core responsibilities.",MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Claim,"PHAC's 2025-28 Data Strategy is health-data/surveillance-specific, not enterprise-wide.",MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Claim,"The Public Health Agency of Canada's Data Strategy is explicitly stated (in HC's 2019 document) to be highly dependent on Health Canada's internal services for HR, IM, IT, and enterprise architecture.",MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Claim,"HC's 2019 and PHAC's 2025-28 strategies are six years apart in vintage, with no confirmed newer HC document closing that gap.",MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Claim,SAS Grid is shared foundational infrastructure for both HC and PHAC.,MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Decision,Confirm whether HC's 2019 data strategy/maturity posture has been formally updated.,MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Decision,Determine whether the PHAC-depends-on-HC statement still holds given PHAC's newer strategy.,MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Decision,Reconcile HC's 2019 maturity rating against PHAC's current AI ambitions.,MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Risk,Treating the 2019 HC strategy as current.,MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Risk,Reversing or softening the dependency direction.,MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Risk,Assuming an unconfirmed supersession of the 2019 dependency statement.,MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Risk,Blending HC-wide and PHAC-specific claims.,MENTIONED_IN,HC/PHAC Data Strategy Alignment
+INTEL-006,Relationship,INTEL-006,RELATES_TO,INTEL-002 ON HC-vs-PHAC data strategy distinction
+INTEL-006,Relationship,PHAC Data Strategy,DEPENDS_ON,Health Canada internal services
+INTEL-006,Relationship,Health Canada Data Strategy,PRECEDES,PHAC Data Strategy 2025-28 BY six years
+INTEL-006,Relationship,SAS Grid,SUPPORTS,Health Canada data analytics
+INTEL-006,Relationship,SAS Grid,SUPPORTS,PHAC data analytics
+INTEL-006,Relationship,DG-Science forum,CONNECTS,Health Canada
+INTEL-006,Relationship,DG-Science forum,CONNECTS,Public Health Agency of Canada
+INTEL-006,Relationship,HC-DTB,COLLABORATES_WITH,PHAC ON public-health-focused data architecture
 INTEL-011,IntelBrief,DADM / AIA Governance,,
 INTEL-011,Source,SRC-DADM-AIA-PRIMARY,DERIVED_FROM,DADM / AIA Governance
 INTEL-011,Tag,dadm,TAGS,DADM / AIA Governance
