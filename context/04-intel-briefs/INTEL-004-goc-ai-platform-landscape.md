@@ -11,6 +11,8 @@ graph_enabled: true
 promoted_to_context_pack: false
 source_ids:
   - SRC-GOC-AI-PLATFORM-INTELLIGENCE
+  - SRC-SSC-CANCHAT-CANADA-CA-2026
+  - SRC-SSC-DIGITAL-SOVEREIGNTY-CANADA-CA-2026
 review_after: 2026-07-31
 tags:
   - goc-ai-platforms
@@ -53,6 +55,11 @@ GC tools solve pieces of the AI landscape. HC/PHAC still needs a governed contro
 - Copilot is identified as embedded AI inside existing systems of record and permission layers.
 - HAIL is positioned as an active operational runtime pattern, while PATH is positioned as the intended governed HC/PHAC control-plane/service model.
 - The source explicitly warns that EA interpretation must not be presented as formal GC strategy or approved architecture.
+- Canada.ca describes CANChat as a generative AI chatbot built and operated in Canada by the Canadian government, for use by the Canadian federal public service, with sovereignty (Canadian operation, Canadian ownership, subject only to Canadian law) cited as a key design consideration (`SRC-SSC-CANCHAT-CANADA-CA-2026`).
+- Canada.ca states CANChat offers a variety of LLMs, including models that are Canadian-built and Canadian-hosted, intended to reflect Canadian context/values, reduce reliance on foreign technologies, and strengthen data control (`SRC-SSC-CANCHAT-CANADA-CA-2026`).
+- Canada.ca states SSC has begun deploying CANChat with "some GC departments and agencies" (unnamed), with a phased expansion of the user base starting July 2026 toward full GC coverage (`SRC-SSC-CANCHAT-CANADA-CA-2026`).
+- Canada.ca explicitly caveats that CANChat "doesn't think or understand like a human," can make mistakes, and outputs still need review (`SRC-SSC-CANCHAT-CANADA-CA-2026`).
+- Canada.ca defines digital sovereignty as Canada controlling its own data, technology, and essential online services rather than relying on foreign companies, systems, or laws, with data protected under Canadian law and resilience maintained if international systems or rules change (`SRC-SSC-DIGITAL-SOVEREIGNTY-CANADA-CA-2026`).
 
 ## 4. Working interpretation
 
@@ -85,6 +92,9 @@ For HC/PHAC, the core architecture question is not “which AI tool do we buy?�
 | Define where CANChat fits for Protected B or workflow use | Open | OCDO / Security / DTB | Needs approved usage pattern |
 | Define GCTranslate API/platform integration posture | Open | OCDO / DTB / PSPC interface | Needs service integration evidence |
 | Maintain horizon scan for Canadian/sovereign models | Watch | EA / OCDO | Needs policy and platform evaluation |
+| Confirm whether GC/SSC-wide CANChat rollout has reached HC/PHAC specifically | Open | OCDO / DTB / PHAC EA | Source states "some GC departments and agencies" only — not source-backed for HC/PHAC; not stated either way |
+| Confirm CANChat's suitability for Protected B or other operational-data classifications | Open | Security / OCDO / DTB | Not addressed by either new source — no classification or operational-data approval stated |
+| Confirm CANChat's relationship to PATH, HAIL, or M365 Copilot | Open | EA / DTB | Not addressed by either new source — no integration, comparison, or convergence claim stated |
 
 ## 7. Risks and caveats
 
@@ -137,6 +147,9 @@ For HC/PHAC, the core architecture question is not “which AI tool do we buy?�
 - runtime layer
 - foundation model layer
 - Protected B posture
+- digital sovereignty
+- Canadian-hosted models
+- CANChat deployment phasing
 
 ### Claims
 
@@ -146,6 +159,11 @@ For HC/PHAC, the core architecture question is not “which AI tool do we buy?�
 - GCTranslate is a vertical governed AI service pattern.
 - Copilot embeds AI inside existing systems of record and permission layers.
 - EA platform intelligence must not be represented as formal GC policy.
+- CANChat is built and operated in Canada for the federal public service, with sovereignty as a key design consideration.
+- CANChat offers Canadian-built and Canadian-hosted LLM options alongside other models.
+- SSC has begun deploying CANChat with some unnamed GC departments and agencies, with phased expansion starting July 2026 toward full GC coverage.
+- CANChat outputs require human review and can make mistakes.
+- Digital sovereignty (per SSC) means Canada controls its own data, technology, and essential online services rather than relying on foreign companies, systems, or laws.
 
 ### Decisions
 
@@ -175,6 +193,8 @@ MaplePT SIGNALS sovereign model option
 PATH REQUIRES HAIL convergence model
 AI Playbook USES platform landscape
 Procurement rubric USES platform landscape
+CANChat SUPPORTS digital sovereignty
+CANChat USES Canadian-hosted models
 ```
 
 ## 11. Open questions
@@ -184,3 +204,6 @@ Procurement rubric USES platform landscape
 - Can GCTranslate be consumed through an approved API pattern for HC/PHAC workflows?
 - What architecture decision will formally resolve PATH/HAIL convergence?
 - Which tool categories should be treated as enterprise capabilities versus local program tools?
+- Has GC/SSC-wide CANChat rollout reached HC/PHAC specifically, beyond the unnamed "some GC departments and agencies" stated publicly? [not source-backed — open question]
+- Is CANChat approved or suitable for Protected B or other operational-data use? [not source-backed — open question]
+- What, if any, relationship exists between CANChat and PATH, HAIL, or M365 Copilot? [not source-backed — open question]
