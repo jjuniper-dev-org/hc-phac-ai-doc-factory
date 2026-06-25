@@ -13,6 +13,7 @@ source_ids:
   - SRC-AI-READINESS-DATA-PERSPECTIVE
   - SRC-HC-PHAC-IT-PLAN-FOCUS-AREAS
   - SRC-PHAC-DATA-STRATEGY-2025-2028
+  - SRC-HC-DATA-STRATEGY-2019
 review_after: 2026-07-31
 tags:
   - ai-readiness
@@ -68,6 +69,8 @@ AI readiness depends on governed, reusable, interoperable, findable, and steward
 - PHAC Priority 1 explicitly includes technology and AI integration as a data-governance issue.
 - PHAC calls for collaboration with HC-DTB on public-health-focused data architecture.
 - PHAC’s strategy emphasizes interoperability, standards, simplified external intake, data linkage, FAIR/CARE, SGBA+, anti-racism, disaggregated data, Indigenous data sovereignty, and responsible use.
+- A Health Canada-specific Data Strategy exists (October 2019; `SRC-HC-DATA-STRATEGY-2019`). It is enterprise-wide, spanning both of HC's core responsibilities (Health Care Systems, and Health Protection and Promotion), unlike PHAC's health-data-specific strategy.
+- HC's 2019 Gartner-facilitated maturity assessment rated HC as approaching Level 2 "Developing" (scale 0 Nascent–5 Optimizing); the 2019 document also describes early Solutions Fund AI/ML pilots (a systematic-review AI proof of concept and AI/ML use on regulatory inspection data). The full HC-vs-PHAC comparison, including the currency caveat on this 2019 source, is maintained in `INTEL-006`.
 
 ## 4. Working interpretation
 
@@ -105,7 +108,7 @@ The data foundation is also what links the HC AI Roadmap pillars to enterprise e
 | Align AI use-case inventory with data asset inventory | Proposed | OCDO / EA | Needs integration pattern |
 | Decide where data readiness evidence is captured | Open | OCDO / TPO / ARB | Needs governance workflow |
 | Map PHAC Data Strategy priorities to AI readiness gates | Proposed | PHAC CDO / OCDO / EA | Needs PHAC-HC alignment review |
-| Confirm whether an HC-specific Data Strategy exists and how it differs | Open | HC CDO / EA | Needs HC source document |
+| Confirm whether an HC-specific Data Strategy exists and how it differs | Resolved (source found) | HC CDO / EA | Found: `SRC-HC-DATA-STRATEGY-2019` (Oct 2019, enterprise-wide; currency caveat applies — no newer standalone publication confirmed). Full HC-vs-PHAC comparison maintained in `INTEL-006`, not duplicated here. |
 
 ## 7. Risks and caveats
 
@@ -116,7 +119,7 @@ The data foundation is also what links the HC AI Roadmap pillars to enterprise e
 | Weak metadata | Reduces discoverability and auditability | Require catalogue, dictionary, and lineage evidence |
 | Ambiguous stewardship | Blurs accountability for quality and use constraints | Identify data stewards and program owners |
 | Equity and bias gaps | AI may reproduce inequities or weakly represent populations | Include SGBA+, disaggregated data, anti-racism, and Indigenous data sovereignty checks |
-| PHAC/HC strategy confusion | PHAC-specific strategy may be misrepresented as HC-wide strategy | Label PHAC-specific claims and seek HC-specific source |
+| PHAC/HC strategy confusion | PHAC-specific strategy may be misrepresented as HC-wide strategy | Label PHAC-specific claims; HC-specific source found (`SRC-HC-DATA-STRATEGY-2019`); HC-vs-PHAC distinction now maintained in `INTEL-006` |
 | Overclaiming readiness | Could imply governance maturity not yet achieved | Mark maturity gaps and evidence gaps explicitly |
 
 ## 8. Use in document-production pipeline
@@ -197,7 +200,7 @@ The data foundation is also what links the HC AI Roadmap pillars to enterprise e
 - Align AI use-case inventory with data asset inventory.
 - Define where data-readiness evidence is captured.
 - Map PHAC Data Strategy priorities to AI readiness gates.
-- Locate and assess an HC-specific data strategy source.
+- Locate and assess an HC-specific data strategy source (resolved: `SRC-HC-DATA-STRATEGY-2019`; see `INTEL-006`).
 
 ### Risks
 
@@ -228,6 +231,7 @@ Data steward OWNS data quality evidence
 Purview SUPPORTS metadata catalogue
 PATH INHERITS data governance controls
 HAIL INHERITS data governance controls
+INTEL-002 RELATES_TO INTEL-006 ON HC-vs-PHAC data strategy distinction
 ```
 
 ## 11. Open questions
@@ -237,5 +241,5 @@ HAIL INHERITS data governance controls
 - Which repositories are acceptable for AI-relevant data at each classification level?
 - How should AI use cases be linked to authoritative data assets and stewards?
 - How should PHAC’s Data Strategy priorities map to HC/PHAC shared AI readiness gates?
-- Is there an HC-specific Data Strategy, and how should it modify or complement this intel brief?
+- Is there an HC-specific Data Strategy, and how should it modify or complement this intel brief? Answered: yes — `SRC-HC-DATA-STRATEGY-2019` (October 2019, enterprise-wide; currency caveat — no newer standalone HC publication confirmed, though HC's 2024-25/2025-26 Departmental Plans still reference it by name). Full HC-vs-PHAC comparison is in `INTEL-006`.
 - What evidence is required before a brief can move from `draft` to `review-ready`?
