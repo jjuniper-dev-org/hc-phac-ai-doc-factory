@@ -35,6 +35,7 @@ tags:
 - Owner / steward: EA / AI document factory working context
 - Source basis: ISED's published national strategy, "Canada's National Artificial Intelligence Strategy: AI for All" (`SRC-ISED-AI-FOR-ALL-NATIONAL-AI-STRATEGY`)
 - Review state: Working interpretation only; not a citeable HC/PHAC policy position. The source is a Government of Canada national strategy document, not an HC/PHAC document.
+- Promotion recommendation: Keep as `draft` until HC/PHAC-specific follow-up confirms (or rules out) participation in the AI Missions Program health mission and the Health Sector Data Space, per the open questions in section 11.
 
 ## 2. Executive takeaway
 

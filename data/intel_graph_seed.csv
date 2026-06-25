@@ -1,7 +1,5 @@
 source_id,node_type,name,relationship,target
 INTEL-001,IntelBrief,PATH / HAIL Convergence,,
-INTEL-001,Source,SRC-PATH-BRIEFING,DERIVED_FROM,PATH / HAIL Convergence
-INTEL-001,Source,SRC-HAIL-BRIEFING,DERIVED_FROM,PATH / HAIL Convergence
 INTEL-001,Tag,path,TAGS,PATH / HAIL Convergence
 INTEL-001,Tag,hail,TAGS,PATH / HAIL Convergence
 INTEL-001,Tag,foundry,TAGS,PATH / HAIL Convergence
@@ -358,7 +356,7 @@ INTEL-008,Relationship,INTEL-008,RELATES_TO,INTEL-011 ON DADM-AIA governance as 
 INTEL-008,Relationship,AI for All strategy,DOES_NOT_NAME,Health Canada
 INTEL-008,Relationship,AI for All strategy,DOES_NOT_NAME,PHAC
 INTEL-011,IntelBrief,DADM / AIA Governance,,
-INTEL-011,Source,SRC-DADM-AIA-PRIMARY,DERIVED_FROM,DADM / AIA Governance
+INTEL-011,Source,SRC-TBS-DIRECTIVE-AUTOMATED-DECISION-MAKING,DERIVED_FROM,DADM / AIA Governance
 INTEL-011,Tag,dadm,TAGS,DADM / AIA Governance
 INTEL-011,Tag,aia,TAGS,DADM / AIA Governance
 INTEL-011,Tag,automated-decision-making,TAGS,DADM / AIA Governance
@@ -369,27 +367,39 @@ INTEL-011,Concept,DADM,MENTIONED_IN,DADM / AIA Governance
 INTEL-011,Concept,AIA,MENTIONED_IN,DADM / AIA Governance
 INTEL-011,Concept,automated decision system,MENTIONED_IN,DADM / AIA Governance
 INTEL-011,Concept,administrative decision,MENTIONED_IN,DADM / AIA Governance
-INTEL-011,Concept,impact level,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Concept,production,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Concept,test environment,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Concept,impact assessment level,MENTIONED_IN,DADM / AIA Governance
 INTEL-011,Concept,human involvement,MENTIONED_IN,DADM / AIA Governance
 INTEL-011,Concept,recourse,MENTIONED_IN,DADM / AIA Governance
 INTEL-011,Concept,monitoring,MENTIONED_IN,DADM / AIA Governance
 INTEL-011,Concept,publication,MENTIONED_IN,DADM / AIA Governance
 INTEL-011,Concept,privacy consultation,MENTIONED_IN,DADM / AIA Governance
 INTEL-011,Concept,legal consultation,MENTIONED_IN,DADM / AIA Governance
-INTEL-011,Claim,DADM/AIA is primary governance context for automated decision systems.,MENTIONED_IN,DADM / AIA Governance
-INTEL-011,Claim,Not all AI use cases trigger DADM.,MENTIONED_IN,DADM / AIA Governance
-INTEL-011,Claim,"All AI use cases should still be triaged for governance, privacy, security, and accountability.",MENTIONED_IN,DADM / AIA Governance
-INTEL-011,Claim,Pattern Zero should include a DADM/AIA trigger assessment.,MENTIONED_IN,DADM / AIA Governance
-INTEL-011,Decision,Define AI intake triage for DADM/AIA.,MENTIONED_IN,DADM / AIA Governance
-INTEL-011,Decision,Define AIA responsibility model.,MENTIONED_IN,DADM / AIA Governance
-INTEL-011,Decision,Define publication/update process.,MENTIONED_IN,DADM / AIA Governance
-INTEL-011,Risk,Over-application.,MENTIONED_IN,DADM / AIA Governance
-INTEL-011,Risk,Under-application.,MENTIONED_IN,DADM / AIA Governance
-INTEL-011,Risk,Weak accountability.,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Concept,approval to operate,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Claim,"DADM/AIA is primary governance context for automated decision systems, but only within its own stated scope.",MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Claim,"The directive applies only to automated decision systems in production used to make an administrative decision or related assessment about a client (section 5.1), and explicitly excludes research/experimentation and test-environment systems (section 5.2).",MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Claim,"Not all AI use cases trigger DADM; the trigger is the section 5.1/5.2 scope test, not AI usage generally.",MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Claim,"All AI use cases should still be triaged for governance, privacy, security, and accountability, even when DADM/AIA does not formally apply.",MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Claim,Pattern Zero should include a DADM/AIA trigger assessment using the directive's own scope test.,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Claim,"Existing automated decision systems developed/procured before June 24, 2025 have until June 24, 2026 to comply with new/updated requirements (section 1.2.1).",MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Claim,"Approval-to-operate authority is tiered by impact level: ADM (I/II), deputy head (III), Treasury Board (IV), with agents-of-Parliament heads approving their own Level IV systems.",MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Decision,Define AI intake triage for DADM/AIA using the section 5.1/5.2 scope test.,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Decision,"Define AIA responsibility model, including ADM/deputy head/Treasury Board approval tiers.",MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Decision,Define publication/update process for HC/PHAC AIAs on the Open Government Portal.,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Decision,Inventory HC/PHAC systems against the 2025-06-24 / 2026-06-24 compliance-timeline amendment.,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Risk,Over-application (treating all AI as DADM-scoped).,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Risk,Under-application (missing systems that meet the section 5.1 test).,MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Risk,Weak accountability (platform teams mistaken for decision owners).,MENTIONED_IN,DADM / AIA Governance
 INTEL-011,Risk,Inadequate human oversight.,MENTIONED_IN,DADM / AIA Governance
 INTEL-011,Risk,Poor evidence of monitoring and recourse.,MENTIONED_IN,DADM / AIA Governance
-INTEL-011,Relationship,DADM,GOVERNS,automated decision systems
+INTEL-011,Risk,"Missing the June 24, 2026 compliance deadline for pre-existing systems.",MENTIONED_IN,DADM / AIA Governance
+INTEL-011,Relationship,DADM,GOVERNS,automated decision systems IN_SCOPE_WHEN production AND administrative decision
+INTEL-011,Relationship,DADM,EXCLUDES,research/experimentation systems
+INTEL-011,Relationship,DADM,EXCLUDES,test environment systems
 INTEL-011,Relationship,AIA,ASSESSES,automated decision systems
+INTEL-011,Relationship,AIA,DETERMINES,impact assessment level
+INTEL-011,Relationship,impact assessment level,DETERMINES,approval to operate tier
 INTEL-011,Relationship,Pattern Zero,REQUIRES,DADM/AIA triage
 INTEL-011,Relationship,Program owner,RETAINS_ACCOUNTABILITY_FOR,administrative decision use
 INTEL-011,Relationship,PATH,HOSTS,AI-enabled applications

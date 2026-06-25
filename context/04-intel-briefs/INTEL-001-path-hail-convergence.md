@@ -9,9 +9,7 @@ source_controlled: true
 pipeline_use: true
 graph_enabled: true
 promoted_to_context_pack: false
-source_ids:
-  - SRC-PATH-BRIEFING
-  - SRC-HAIL-BRIEFING
+source_ids: []
 review_after: 2026-07-31
 tags:
   - path
@@ -32,8 +30,10 @@ tags:
 - Confidence level: Medium
 - Last updated: 2026-06-23
 - Owner / steward: EA / AI document factory working context
-- Source basis: Existing PATH/HAIL briefings plus meeting-derived working interpretation
-- Review state: Needs human review before promotion to context pack
+- Source basis: No formal source card exists for PATH or HAIL. This brief is built entirely from meeting-derived working interpretation, consistent with the source register's own classification of SRC-004 (PATH Agent Briefing) and SRC-005 (HAIL Agent Briefing) as "Working interpretation" / "Working" status — though note those register IDs do not correspond to any actual file in `context/02-source-cards/`, and the prior frontmatter values `SRC-PATH-BRIEFING`/`SRC-HAIL-BRIEFING` did not resolve to any file either.
+- Evidence gap: No formal source card exists for PATH or HAIL as of this review (2026-06-25). All facts in this brief are working interpretation derived from internal meetings/discussions, not a citable document. This brief should not be promoted past `draft` until real PATH/HAIL source material is identified and source-carded.
+- Review state: Needs human review before promotion to context pack; specifically needs real PATH/HAIL source material before any status change.
+- Promotion recommendation: Keep as `draft` until real PATH/HAIL source material is identified and source-carded.
 
 ## 2. Executive takeaway
 
