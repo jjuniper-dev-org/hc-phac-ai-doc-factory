@@ -267,6 +267,55 @@ INTEL-005,Relationship,PATH,GOVERNS,decision-assurance pattern
 INTEL-005,Relationship,GenAIOps,MONITORS,AI quality
 INTEL-005,Relationship,AI Playbook,USES,GREP pattern
 INTEL-005,Relationship,Procurement rubric,USES,GREP assurance criteria
+INTEL-008,IntelBrief,National AI Strategy Alignment,,
+INTEL-008,Source,SRC-ISED-AI-FOR-ALL-NATIONAL-AI-STRATEGY,DERIVED_FROM,National AI Strategy Alignment
+INTEL-008,Tag,national-ai-strategy,TAGS,National AI Strategy Alignment
+INTEL-008,Tag,ised,TAGS,National AI Strategy Alignment
+INTEL-008,Tag,ai-for-all,TAGS,National AI Strategy Alignment
+INTEL-008,Tag,sovereign-compute,TAGS,National AI Strategy Alignment
+INTEL-008,Tag,health-sector-data-space,TAGS,National AI Strategy Alignment
+INTEL-008,Tag,vital,TAGS,National AI Strategy Alignment
+INTEL-008,Tag,ai-missions,TAGS,National AI Strategy Alignment
+INTEL-008,Tag,ai-safety-institute,TAGS,National AI Strategy Alignment
+INTEL-008,Tag,public-service-delivery,TAGS,National AI Strategy Alignment
+INTEL-008,Concept,AI for All (national AI strategy),MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Concept,"six pillars (trust, opportunity, sovereignty)",MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Concept,health and life sciences priority sector,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Concept,AI Missions Program,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Concept,Health Sector Data Space,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Concept,VITAL,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Concept,CIHI,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Concept,sovereign AI foundation,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Concept,build-partner-buy,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Concept,Canadian AI Safety Institute,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Concept,Office of Digital Transformation,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Concept,human-in-the-loop,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Concept,PATH,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Concept,HAIL,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Concept,CANChat,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Concept,DADM-AIA,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Claim,"The national strategy names health and life sciences as a priority sector and commits its first AI Mission ($200M) to health outcomes nationally, without naming HC/PHAC.",MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Claim,"The national strategy commits $200M combined to Health Sector Data Space (with CIHI) and VITAL expansion, both described as national/provincial infrastructure, not HC/PHAC programs.",MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Claim,"The national strategy's sovereign-compute ""build-partner-buy"" posture parallels but does not specify HC/PHAC's PATH/HAIL control-plane work.",MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Claim,"The national strategy's public-service-delivery commitments (human-in-the-loop, transparency, accountability) parallel but do not specify HC/PHAC's existing PATH/HAIL/CANChat governance work.",MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Claim,"HC/PHAC's relationship to any of the above remains unaddressed by the source and is an open question, not a confirmed alignment.",MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Decision,Determine whether to pursue AI Missions Program engagement.,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Decision,Determine whether to seek a role in the Health Sector Data Space.,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Decision,Assess VITAL's relevance to HC/PHAC data holdings.,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Decision,Reconcile national sovereign-compute posture with PATH/HAIL.,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Decision,Assess national public-service-delivery commitments against existing HC/PHAC AI governance.,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Risk,Overclaiming HC/PHAC relevance.,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Risk,Premature resource planning.,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Risk,Sovereignty-narrative conflation.,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Risk,Governance-expectation creep.,MENTIONED_IN,National AI Strategy Alignment
+INTEL-008,Relationship,INTEL-008,RELATES_TO,INTEL-004 ON sovereign compute and control-plane framing
+INTEL-008,Relationship,INTEL-008,RELATES_TO,INTEL-002 ON health-data infrastructure and AI readiness
+INTEL-008,Relationship,INTEL-008,RELATES_TO,INTEL-001 ON PATH/HAIL convergence as HC/PHAC's own control-plane question
+INTEL-008,Relationship,INTEL-008,RELATES_TO,INTEL-003 ON data-platform/control-plane themes (Purview)
+INTEL-008,Relationship,INTEL-008,RELATES_TO,INTEL-005 ON decision-assurance patterns relevant to AI Mission/governance decisions
+INTEL-008,Relationship,INTEL-008,RELATES_TO,INTEL-011 ON DADM-AIA governance as the existing HC/PHAC AI accountability mechanism
+INTEL-008,Relationship,AI for All strategy,DOES_NOT_NAME,Health Canada
+INTEL-008,Relationship,AI for All strategy,DOES_NOT_NAME,PHAC
 INTEL-011,IntelBrief,DADM / AIA Governance,,
 INTEL-011,Source,SRC-DADM-AIA-PRIMARY,DERIVED_FROM,DADM / AIA Governance
 INTEL-011,Tag,dadm,TAGS,DADM / AIA Governance
