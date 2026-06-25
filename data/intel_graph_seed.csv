@@ -160,6 +160,8 @@ INTEL-003,Relationship,Purview,INFORMS,Data Architecture Plan
 INTEL-003,Relationship,Purview,INFORMS,AI Playbook
 INTEL-004,IntelBrief,GoC AI Platform Landscape,,
 INTEL-004,Source,SRC-GOC-AI-PLATFORM-INTELLIGENCE,DERIVED_FROM,GoC AI Platform Landscape
+INTEL-004,Source,SRC-SSC-CANCHAT-CANADA-CA-2026,DERIVED_FROM,GoC AI Platform Landscape
+INTEL-004,Source,SRC-SSC-DIGITAL-SOVEREIGNTY-CANADA-CA-2026,DERIVED_FROM,GoC AI Platform Landscape
 INTEL-004,Tag,goc-ai-platforms,TAGS,GoC AI Platform Landscape
 INTEL-004,Tag,canchat,TAGS,GoC AI Platform Landscape
 INTEL-004,Tag,copilot,TAGS,GoC AI Platform Landscape
@@ -182,12 +184,20 @@ INTEL-004,Concept,vertical AI service,MENTIONED_IN,GoC AI Platform Landscape
 INTEL-004,Concept,runtime layer,MENTIONED_IN,GoC AI Platform Landscape
 INTEL-004,Concept,foundation model layer,MENTIONED_IN,GoC AI Platform Landscape
 INTEL-004,Concept,Protected B posture,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Concept,digital sovereignty,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Concept,Canadian-hosted models,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Concept,CANChat deployment phasing,MENTIONED_IN,GoC AI Platform Landscape
 INTEL-004,Claim,The current GC AI landscape is fragmented rather than a single coherent enterprise AI platform.,MENTIONED_IN,GoC AI Platform Landscape
 INTEL-004,Claim,PATH is the intended HC/PHAC governed AI control-plane/service model.,MENTIONED_IN,GoC AI Platform Landscape
 INTEL-004,Claim,HAIL is the active operational runtime proof point.,MENTIONED_IN,GoC AI Platform Landscape
 INTEL-004,Claim,GCTranslate is a vertical governed AI service pattern.,MENTIONED_IN,GoC AI Platform Landscape
 INTEL-004,Claim,Copilot embeds AI inside existing systems of record and permission layers.,MENTIONED_IN,GoC AI Platform Landscape
 INTEL-004,Claim,EA platform intelligence must not be represented as formal GC policy.,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Claim,"CANChat is built and operated in Canada for the federal public service, with sovereignty as a key design consideration.",MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Claim,CANChat offers Canadian-built and Canadian-hosted LLM options alongside other models.,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Claim,"SSC has begun deploying CANChat with some unnamed GC departments and agencies, with phased expansion starting July 2026 toward full GC coverage.",MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Claim,CANChat outputs require human review and can make mistakes.,MENTIONED_IN,GoC AI Platform Landscape
+INTEL-004,Claim,"Digital sovereignty (per SSC) means Canada controls its own data, technology, and essential online services rather than relying on foreign companies, systems, or laws.",MENTIONED_IN,GoC AI Platform Landscape
 INTEL-004,Decision,Confirm PATH target control-plane role.,MENTIONED_IN,GoC AI Platform Landscape
 INTEL-004,Decision,Confirm HAIL runtime convergence role.,MENTIONED_IN,GoC AI Platform Landscape
 INTEL-004,Decision,Define CANChat usage pattern.,MENTIONED_IN,GoC AI Platform Landscape
@@ -207,6 +217,8 @@ INTEL-004,Relationship,MaplePT,SIGNALS,sovereign model option
 INTEL-004,Relationship,PATH,REQUIRES,HAIL convergence model
 INTEL-004,Relationship,AI Playbook,USES,platform landscape
 INTEL-004,Relationship,Procurement rubric,USES,platform landscape
+INTEL-004,Relationship,CANChat,SUPPORTS,digital sovereignty
+INTEL-004,Relationship,CANChat,USES,Canadian-hosted models
 INTEL-005,IntelBrief,GREP Decision Assurance Pattern,,
 INTEL-005,Source,SRC-GREP-AGENT-BRIEFING,DERIVED_FROM,GREP Decision Assurance Pattern
 INTEL-005,Source,SRC-HAIL-BRIEFING,DERIVED_FROM,GREP Decision Assurance Pattern
