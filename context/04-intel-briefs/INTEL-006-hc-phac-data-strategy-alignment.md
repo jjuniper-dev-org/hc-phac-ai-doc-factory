@@ -34,6 +34,7 @@ tags:
 - Owner / steward: EA / AI document factory working context
 - Source basis: Health Canada Data Strategy (2019) source card and PHAC Data Strategy 2025/26–2027/28 source card
 - Review state: Suitable for draft document production; not accepted context
+- Promotion recommendation: Keep as `draft` until the open questions about HC strategy currency (whether a post-2019 edition exists) and the PHAC-dependency status (whether the 2019 PHAC-depends-on-HC statement still holds) are resolved.
 
 ## 2. Executive takeaway
 
