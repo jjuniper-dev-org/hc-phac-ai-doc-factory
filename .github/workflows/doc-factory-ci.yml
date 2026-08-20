@@ -1,0 +1,52 @@
+name: Document Factory CI
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/**"
+      - "context/**"
+      - "data/**"
+      - "docs/**"
+      - "graph/**"
+      - "templates/**"
+      - "tools/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compile Python tools
+        run: python -m compileall -q tools
+
+      - name: Validate intel briefs
+        run: python tools/intel/validate_intel_docs.py
+
+      - name: Verify deterministic intel graph export
+        run: |
+          python tools/intel/export_intel_graph.py
+          git diff --exit-code -- data/intel_graph_seed.csv
+
+      - name: Validate EAIF evidence and requirements
+        run: python tools/eaif/validate_eaif.py
+
+      - name: Build EAIF working draft
+        run: python tools/eaif/build_eaif.py
+
+      - name: Upload EAIF working draft
+        uses: actions/upload-artifact@v4
+        with:
+          name: eaif-working-draft
+          path: build/eaif/EAIF-working-draft.md
+          if-no-files-found: error
