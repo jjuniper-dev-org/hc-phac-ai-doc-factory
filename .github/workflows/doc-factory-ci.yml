@@ -1,6 +1,17 @@
 name: Document Factory CI
 
 on:
+  push:
+    branches-ignore:
+      - main
+    paths:
+      - ".github/workflows/**"
+      - "context/**"
+      - "data/**"
+      - "docs/**"
+      - "graph/**"
+      - "templates/**"
+      - "tools/**"
   pull_request:
     paths:
       - ".github/workflows/**"
